@@ -1,0 +1,16 @@
+<!-- mi_app/templates/base.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Mi Sitio{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>{% block header %}Bienvenido a Mi Sitio{% endblock %}</h1>
+    </header>
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
